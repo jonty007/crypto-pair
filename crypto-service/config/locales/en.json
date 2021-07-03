@@ -1,0 +1,5 @@
+{
+  "DB.ERROR.INIT_ERROR": "Unable to connect, please try after sometime.",
+  "CRYPTO_COMPARE.ERROR.INVALID_PAIR": "Provided pair is not valid.",
+  "CRYPTO_COMPARE.ERROR.NOT_SUPPORTED_PAIR": "Provided pair is not supported."
+}

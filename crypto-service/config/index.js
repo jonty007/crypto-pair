@@ -3,7 +3,7 @@ const path = require('path');
 // All configurations will extend these options
 // ============================================
 let all = {
-  name: 'MERN Base',
+  name: 'Crypto Pair',
   env: process.env.NODE_ENV,
   root: path.normalize(__dirname + '..'), // Root path of server
   port: process.env.PORT || 4001, // Server port

@@ -51,7 +51,7 @@ export const logger = createLogger({
   format: enumerateErrorFormat(),
   transports: [
     new transports.DailyRotateFile({
-      filename: 'MERN-Base-%DATE%.log',
+      filename: 'Crypto-Pair-%DATE%.log',
       datePattern: 'YYYY-MM-DD',
       zippedArchive: false, // keep false, this allows older files to be deleted
       maxSize: '20m',

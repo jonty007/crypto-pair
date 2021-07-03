@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Crypto Compare</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
+  <script>
+    var socket = io('http://localhost:4001');
+
+    setInterval(function () {
+      console.log('emitting event');
+      socket.emit('price', { fsyms: 'DASH', tsyms: 'RUR' });
+    }, 10000);
+
+    socket.on('price-data', function (data) {
+      console.log('data: ', data);
+      var textedJson = JSON.stringify(data, undefined, 2);
+      var priceData = document.getElementById('price-data');
+      priceData.innerHTML = textedJson;
+    });
+
+  </script>
+</head>
+
+<body>
+  <pre id='price-data'></pre>
+</body>
+
+</html>

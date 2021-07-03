@@ -6,6 +6,7 @@ npm start
 ```
 ### This will start your service at port 4041, http://localhost:4001
 ### Crypto compare route http://localhost:4001/api/v1/crypto-compare?fsyms=BTC&tsyms=USD,EUR
+### Crypto compare route http://localhost:4001/api/v1/crypto-compare?fsyms=BTC&tsyms=USD,EUR?fail=true fail crypto pair manually and fetch data from DB
 
 ## Crypto Compare UI to test socket
 ```shell
